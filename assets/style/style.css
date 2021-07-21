@@ -18,3 +18,11 @@ main {
 .action {
   cursor: pointer;
 }
+
+.bg-cerebii {
+  background-color: #383838;
+}
+
+.active-pokemon-image {
+  max-height: 50vh;
+}

@@ -8,9 +8,14 @@ function _drawAllPokemon() {
       template += `<li class="action" onclick="app.pokeApiController.getPokemon('${p.url}')">${p.name.charAt(0).toUpperCase() + p.name.slice(1)}</li>`)
    document.getElementById('api-pokemon').innerHTML = template
 }
+
+function _drawActivePokemon() {
+   document.getElementById('active-pokemon').innerHTML = ProxyState.activePokemon.Template
+}
 export default class PokeApiController {
    constructor() {
       ProxyState.on('allPokemon', _drawAllPokemon)
+      ProxyState.on('activePokemon', _drawActivePokemon)
       this.getAllPokemon()
    }
 
