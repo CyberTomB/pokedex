@@ -12,7 +12,25 @@
     <title>pokedex</title>
 </head>
 
-<body>
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
@@ -22,7 +40,25 @@
         </nav>
     </header>
     <main class="container">
-        <div id="app"></div>
+        <div class="row pokedex d-flex">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <h3>LIST OF POKEMON</h3>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div>
+                            <h3>MY POKEMON</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <h3>ACTIVE POKEMON</h3>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
