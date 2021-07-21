@@ -43,20 +43,32 @@
         <div class="row pokedex d-flex">
             <div class="col-7">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 pokemon-list">
                         <div>
                             <h3>LIST OF POKEMON</h3>
+                            <ol id="api-pokemon">
+                                <li>PIKACHU</li>
+                                <li>BULBASAUR</li>
+                            </ol>
                         </div>
                     </div>
                     <div class="col-12">
                         <div>
                             <h3>MY POKEMON</h3>
+                            <ol id="my-pokemon"></ol>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-5">
-                <h3>ACTIVE POKEMON</h3>
+            <div class="col-5" id="active-pokemon">
+                <div class="bg-light m-3 p-3 shadow">
+                    <div>
+                        <h3>ACTIVE POKEMON</h3>
+                    </div>
+                    <div class="text-right">
+                        <button>BEEP</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -65,7 +77,9 @@
             <p><small>Made with love by Codeworks</small></p>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 

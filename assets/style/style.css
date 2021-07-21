@@ -9,3 +9,8 @@ main {
 .pokedex {
   flex-grow: 1;
 }
+
+.pokemon-list {
+  max-height: 65vh;
+  overflow-y: auto;
+}
